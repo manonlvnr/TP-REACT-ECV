@@ -1,38 +1,23 @@
 import { useState } from "react";
-import { Form,Button } from "react-bootstrap";
-import List from "./List";
+import TodoForm from "./TodoForm";
+import TodoList from "./TodoList";
 
-function ToDo () {
+function Todo () {
     
-    const [todo, setTodo] = useState();
-    const [todolist, setTodoList] = useState([]);
-
-    const handleChange = (event) => {
-        setTodo(event.target.value);
-    }
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        todolist.push(todo);
-        console.log(todolist);
-        setTodo("");
-    }
+    const [todo, setTodo] = useState("");
+    const [todoList, setTodoList] = useState([]);
 
     return(
         <div className="container">
             <h3>Add ToDo :</h3>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3">
-                    <Form.Control type="text" value={todo} onChange={handleChange}/>
-                    <Button variant="primary" type="submit">Add</Button>
-                </Form.Group>
-            </Form>
-            {todolist.map((listItem)=>(
-                <p key={listItem}>{listItem}</p>
-            ))}
-            <List />
+            <TodoForm todo={todo}
+            todoList={todoList}
+            setTodo={setTodo}
+            setTodoList={setTodoList}
+            />
+            <TodoList todoList={todoList} setTodoList={setTodoList}/>
         </div>
     )
 }
 
-export default ToDo;
+export default Todo;

@@ -1,7 +1,7 @@
 import { Navbar } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import ToDo from "../todolist/ToDo";
+import Todo from "../todolist/Todo";
 
 function Header () {
     return(
@@ -12,13 +12,13 @@ function Header () {
                 </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/ToDo">TodoList</Nav.Link>
+                        <Nav.Link as={Link} to="/Todo">TodoList</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
 
             <Routes>
-                <Route path="/ToDo" element={<ToDo/>} />
+                <Route path="/Todo" element={<Todo/>} />
             </Routes>
         </Router>
     );
