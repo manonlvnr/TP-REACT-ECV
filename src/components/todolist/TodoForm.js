@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { Form,Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
 
 function TodoForm ({todo, setTodo, todoList, setTodoList}) {
@@ -15,11 +15,11 @@ function TodoForm ({todo, setTodo, todoList, setTodoList}) {
     }
 
     return(
-        <div className="container">
+        <div className="">
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3">
                     <Form.Control type="text" value={todo} onChange={handleChange}/>
-                    <Button variant="primary" type="submit">Add</Button>
+                    <button className="action-button" type="submit">Add</button>
                 </Form.Group>
             </Form>
         </div>

@@ -3,7 +3,7 @@ import TodoListItem from "./TodoListItem";
 function TodoList ({todoList, setTodoList}) {
 
     return(
-        <div className="container">
+        <div className="todo-list">
 
             {todoList.map((listItem)=>(
                 <TodoListItem

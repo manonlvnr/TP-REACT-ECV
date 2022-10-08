@@ -1,7 +1,5 @@
-import { Button } from "react-bootstrap";
 
 const itemStyle = {
-    backgroundColor: "#ddd",
     borderRadius: "15px",
     padding: "0.7em",
     marginTop: "10px",
@@ -19,9 +17,9 @@ function TodoListItem ({listItem, todoList, setTodoList}) {
     }
 
     return(
-        <div style={itemStyle} className="container">
+        <div style={itemStyle} className="todo-item">
             <h5 style={itemNameStyle}>{listItem.name}</h5>
-            <Button onClick={deleteTodoItem} variant="danger">Done</Button>
+            <button className="action-button" onClick={deleteTodoItem} variant="danger">Done</button>
         </div>
     )
 }

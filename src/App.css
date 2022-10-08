@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -37,6 +38,77 @@
   }
 }
 
-/* .container {
-  background-color: #61dafb;
-} */
+.todo-container {
+  padding: 4rem;
+}
+
+.todo-title {
+  font-weight: bold;
+  margin-bottom:1rem ;
+}
+
+.mode-button {
+  width:5rem;
+  height:3rem;
+  position: relative;
+  display: block;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px ,rgba(124,55,98,1) inset 0px -5px 15px rgba(166,58,128,1);
+  cursor: pointer;
+}
+
+.mode-button:after {
+  content: "";
+  top:2px;
+  width:2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(90,62,78,1);
+  transition: 0.5s
+}
+
+.action-button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.action-button:hover {
+  font-weight: bold;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-item {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item h5 {
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+
+.todo-item .action-button {
+  margin-top: 0;
+}
+
+.mode-button__sun {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.mode-button__moon {
+  position: absolute;
+  top: 10px;
+  left: 47px;
+}

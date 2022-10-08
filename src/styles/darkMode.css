@@ -1,0 +1,32 @@
+#dark.App {
+    background-color: rgba(67,47,58,1);
+    transition: 0.7s
+  }
+
+#dark .mode-button {
+  background: rgba(152,70,120,1);
+}
+
+#dark .mode-button:after {
+  left:74px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,rgba(67,47,58,1), rgba(41,26,34,1));
+}
+
+#dark .todo-title {
+  color: rgba(228,221,225,1);
+}
+
+#dark .action-button {
+  color: rgba(228,221,225,1) !important;
+  font-weight: bold;
+  background-color: rgba(152,70,120,1);
+}
+
+#dark .todo-item h5 {
+  color: rgba(228,221,225,1) !important;
+}
+
+#dark .todo-item {
+  background-color: rgba(74,74,74,1);
+}

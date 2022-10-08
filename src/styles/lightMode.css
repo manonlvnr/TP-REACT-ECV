@@ -1,0 +1,33 @@
+#light.App {
+    background-color: rgba(253,248,250,1);
+    transition: 0.7s
+  }
+
+#light .mode-button {
+  background: rgba(215,77,166,1);
+}
+
+#light .mode-button:after {
+  left:2px;
+  background: linear-gradient(180deg,rgba(247,225,236,1), rgba(221,179,202,1));
+}
+
+#light .todo-title {
+  color: rgba(68,39,56,1);
+}
+
+#light .action-button {
+  color: rgba(68,39,56,1) !important;
+  font-weight: bold;
+  background: rgba(215,77,166,1)
+}
+
+#light .todo-item {
+  background-color: rgba(244,222,233,1);
+}
+
+#light .todo-item h5 {
+  color: rgba(68,39,56,1) !important;
+}
+
+
